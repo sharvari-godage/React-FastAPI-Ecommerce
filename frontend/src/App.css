@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fc;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color: #ec4899;
+}
+
+/* Hero Section */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #6c2bd9,
+    #ec4899
+  );
+
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Heading */
+
+.section-title {
+  text-align: center;
+  margin: 35px 0;
+  font-size: 35px;
+  color: #333;
+}
+
+/* Product Grid */
+
+.product-grid {
+  padding: 20px 40px 50px;
+
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 25px;
+}
+
+/* Product Card */
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+
+  box-shadow: 0 5px 15px
+    rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 8px 20px
+    rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category {
+  display: inline-block;
+  margin-top: 12px;
+
+  background: #6c2bd9;
+  color: white;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.stock {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    90deg,
+    #6c2bd9,
+    #ec4899
+  );
+
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
